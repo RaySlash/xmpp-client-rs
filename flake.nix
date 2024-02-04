@@ -25,7 +25,7 @@
         ...
       }: let
         rust-toolchain =
-          pkgs.rust-bin.fromRustupToolchainFile ./toolchain.toml;
+          pkgs.rust-bin.fromRustupToolchainFile ./rust-toolchain.toml;
 
         buildDeps = with pkgs; [
           pkg-config
