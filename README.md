@@ -1,24 +1,15 @@
-# Overview
+# XMPP Client
 
-**This repo is not intended to be `git cloned`**.
+WIP xmpp client made using dioxus in rust
 
-This repo is used by `dx create` when starting new projects. So by running `dx create` you are effectively running this code.
+### Usage
 
-# Development
-
-1. Install npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-2. Install the tailwind css cli: https://tailwindcss.com/docs/installation
-3. Run the following command in the root of the project to start the tailwind CSS compiler:
-
-```bash
-npx tailwindcss -i ./input.css -o ./public/tailwind.css --watch
-```
-
-Run the following command in the root of the project to start the Dioxus dev server:
-
-```bash
+```shell
+nix develop # or do direnv allow
 dx serve --hot-reload
 ```
 
-- Open the browser to http://localhost:8080
+### TODO
 
+- basic UI
+- use xmpp-rs
