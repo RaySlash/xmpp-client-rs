@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: AtkinsonHyperlegible;
+	src: url("./fonts/AtkinsonHyperlegible-Regular.ttf");
+}
+
+@font-face {
+	font-family: AtkinsonHyperlegibleBold;
+	src: url("./fonts/AtkinsonHyperlegible-Bold.ttf");
+}
+
+@font-face {
+	font-family: Borel;
+	src: url("./fonts/Borel-Regular.ttf");
+}
+
+:root {
+	--color-bg: #040d12;
+	--color-text: #93b1a6;
+	--color-accent: #183d3d;
+	--color-accent2: #5c8374;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: AtkinsonHyperlegible;
+	background-color: var(--color-bg);
+	color: var(--color-text);
+}
+
+/* (a) represents the Link in dioxus_router*/
+a {
+	text-decoration: none;
+	background-color: var(--color-bg);
+	color: var(--color-text);
+}
+
+.intro {
+	display: flex;
+	padding: 0 10vw;
+	flex-direction: column;
+	background-color: var(--color-accent);
+}
+
+.name {
+	line-height: 2vh;
+}
+
+.name>* {
+	font-family: Borel;
+}
+
+.name h1 {
+	font-size: 3rem;
+}
+
+.tagline {
+	line-height: 1vh;
+}
+
+.navbar {
+	font-family: AtkinsonHyperlegibleBold;
+	list-style: none;
+	padding: 1rem 10vw;
+	font-size: 1.5rem;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.nav-routes,
+.nav-outbound {
+	display: flex;
+	gap: 1rem;
+	padding: 0.5rem 0;
+}
+
+.nav-routes a:hover {
+	padding: 0 1rem;
+	border-radius: 1rem;
+	background-color: var(--color-accent2);
+	color: var(--color-bg);
+}
+
+.nav-outbound a:hover {
+	border-radius: 100%;
+	color: var(--color-accent2);
+}

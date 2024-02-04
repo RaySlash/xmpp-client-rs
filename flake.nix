@@ -40,6 +40,8 @@
           libappindicator
           webkitgtk
           dioxus-cli
+          nodejs
+          bun
         ];
 
         mkDevShell = rust-toolchain:
